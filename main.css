@@ -398,6 +398,16 @@ a:focus-visible,
 }
 
 
+
+/* Mobile */
+@media (max-width: 476px) {
+  .about {
+  padding: 85px 0 0;
+  }
+}
+
+
+
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   *,
