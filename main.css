@@ -400,9 +400,16 @@ a:focus-visible,
 
 
 /* Mobile */
+@media (max-width: 655px) {
+  .about {
+  padding: 80px 0 0;
+  }
+}
+
+
 @media (max-width: 476px) {
   .about {
-  padding: 85px 0 0;
+  padding: 110px 0 0;
   }
 }
 
