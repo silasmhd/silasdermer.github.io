@@ -1,0 +1,71 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--line);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 18px 0;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 3%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: .8em;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+
+.navbar nav.local {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.navbar nav.local a {
+  font-family: var(--font-mono);
+  font-size: 1em;
+  color: var(--text-dim);
+  letter-spacing: 0.02em;
+  position: relative;
+  transition: color 0.15s ease-out;
+}
+/* not in use
+.navbar nav.local a::before {
+  content: "";
+  color: var(--accent);
+}
+*/
+
+.navbar nav.local a:hover,
+.navbar nav.local a:focus-visible,
+.navbar nav.local a.active {
+  color: var(--accent);
+}
+
+
+@media (max-width: 1070px) {
+  .navbar nav.local {
+    padding-right: calc(3% + 64px);
+  }
+}
