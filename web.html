@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silas Dermer — Security Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <script>
+      (function () {
+        var saved = localStorage.getItem("mode");
+        if (saved === "light") {
+          document.documentElement.setAttribute("data-mode", "light");
+        }
+      })();
+    </script>
+    <script src="controls.js" defer></script>
+</head>
+<body>
+    <div class="bg-layer" aria-hidden="true"></div>
+    <header class="navbar">
+        <div class="navbar-content">
+            <a href="#top" class="name">
+                <h1>Silas Dermer</h1> 
+            </a>
+            <nav class="local">
+                <a class="nav-link" href="#about">about</a>
+                <a class="nav-link" href="#experience">experience</a>
+                <a class="nav-link" href="#skills">skills</a>
+                <a class="nav-link" href="#projects">projects</a>
+                <!-- <a class="nav-link" href="#music">music</a> -->
+                <a class="nav-link" href="#interests">interests</a>
+            </nav>
+            <button id="mode-toggle" class="mode-toggle" aria-label="Switch between dark and light mode" title="Switch mode">
+                <span class="mode-icon mode-icon-dark" aria-hidden="true">&#9789;</span>
+                <span class="mode-icon mode-icon-light" aria-hidden="true">&#9728;</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="top" class="hero">
+            <p class="hero-role">Security Analyst &bull; Cybersecurity, B.S. &mdash; Oregon State University</p>
+            <p class="hero-blurb">
+                I defend networks by day, automate infrastructure by night, and take apart
+                old hardware for fun. Currently protecting schools and municipalities across
+                Oregon and Washington as part of ORTSOC.
+            </p>
+        </section>
+
+        <section id="about" class="panel">
+            <h2>Education</h2>
+
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Oregon State University</h3>
+                    <span class="entry-date">Graduated June 2026</span>
+                </div>
+                <p class="entry-sub">Bachelor of Science &mdash; Cybersecurity &bull; GPA 3.71</p>
+            </div>
+
+            <h3 class="subhead">Relevant Coursework</h3>
+            <p class="tag-row">
+                <span class="tag">Systems Administration</span>
+                <span class="tag">Enterprise Defense</span>
+                <span class="tag">Network Security</span>
+                <span class="tag">Digital Forensics</span>
+                <span class="tag">Cryptography</span>
+                <span class="tag">Computer Networks</span>
+                <span class="tag">Web Development</span>
+                <span class="tag">Software Development</span>
+                <span class="tag">Operating Systems</span>
+                <span class="tag">Computer Architecture &amp; Assembly</span>
+                <span class="tag">Machine Learning &amp; Data Mining</span>
+            </p>
+        </section>
+
+        <section id="experience" class="panel">
+            <h2>Experience</h2>
+
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Security Analyst &mdash; ORTSOC</h3>
+                    <span class="entry-date">Sept 2025 &ndash; June 2026</span>
+                </div>
+                <ul class="entry-list">
+                    <li>Protected clients including educational institutions and municipalities throughout Oregon and Washington</li>
+                    <li>Trained in clinical rotations across Network Security Monitoring, Assessment, Threat Intelligence, Security Engineering, Threat Hunting, and Penetration Testing</li>
+                    <li>Built project management, teamwork, and client communication skills while handling classified information</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-head">
+                    <h3>Stagehand &mdash; Rhino Staging</h3>
+                    <span class="entry-date">June 2023 &ndash; present</span>
+                </div>
+                <p class="entry-sub">Ridgefield, Washington</p>
+                <ul class="entry-list">
+                    <li>Complied with safety regulations while working for nationally touring musicians</li>
+                    <li>Communicated effectively as part of a safety-critical team</li>
+                    <li>Operated equipment to build scaffolding, speaker systems, and lighting for a large concert venue</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="panel">
+            <h2>Skills</h2>
+
+            <h3 class="subhead">Languages</h3>
+            <p class="tag-row">
+                <span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span>
+                <span class="tag">Python</span><span class="tag">Rust</span><span class="tag">Bash</span>
+                <span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">HTML</span>
+                <span class="tag">CSS</span><span class="tag">Assembly</span>
+            </p>
+
+            <h3 class="subhead">Frameworks &amp; Programs</h3>
+            <p class="tag-row">
+                <span class="tag">Node.js</span><span class="tag">React</span><span class="tag">Git</span>
+                <span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Visual Studio</span>
+                <span class="tag">Ghidra</span><span class="tag">GDB</span><span class="tag">Kibana</span>
+            </p>
+
+            <h3 class="subhead">Infrastructure &amp; Security</h3>
+            <p class="tag-row">
+                <span class="tag">AWS</span><span class="tag">Ansible</span><span class="tag">Terraform</span>
+                <span class="tag">Security Controls</span>
+            </p>
+
+            <h3 class="subhead">Operating Systems</h3>
+            <p class="tag-row">
+                <span class="tag">Ubuntu</span><span class="tag">AlmaLinux</span><span class="tag">Kali</span>
+                <span class="tag">NixOS</span><span class="tag">Windows</span>
+            </p>
+        </section>
+            <h2>Projects</h2>
+            <div id="projects" class="project-grid">
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Honeypot</h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        Built T-Pot honeypots behind ORTSOC's firewall, forwarding alerts into
+                        existing Elastic infrastructure. Configured SSH, Telnet, HTTP, HTTPS, RDP,
+                        FTP, SMB/NetBIOS, MySQL, and other emulated services, and set it up to work
+                        with client sensors so honeypots could be offered to clients. Worked in a
+                        team of three as a special-credit class project.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Automating WireGuard Setup</h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        Wrote an Ansible playbook to set up and update WireGuard and its configs
+                        on a workstation with a single run. Learned WireGuard from scratch alongside
+                        ORTSOC's internal specifications, working asynchronously with other student
+                        analysts and writing comprehensive handoff notes.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Custom Shell (xv6)</h3>
+                        <span class="entry-date">2025</span>
+                    </div>
+                    <p>
+                        Modified the xv6 teaching operating system to add more modern OS concepts,
+                        implementing network drivers, paging, traps, and syscalls. Adapted a
+                        pre-existing codebase, learned real system architecture, and maintained
+                        clear documentation for future contributors.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Machine Learning</h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Polution Visulization</h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Web Development</h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Databases</h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Automation</h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Dark Arts</h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3> </h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        
+                    </p>
+                </article>
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Honeypot</h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        Built T-Pot honeypots behind ORTSOC's firewall, forwarding alerts into
+                        existing Elastic infrastructure. Configured SSH, Telnet, HTTP, HTTPS, RDP,
+                        FTP, SMB/NetBIOS, MySQL, and other emulated services, and set it up to work
+                        with client sensors so honeypots could be offered to clients. Worked in a
+                        team of three as a special-credit class project.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Automating WireGuard Setup</h3>
+                        <span class="entry-date">2026</span>
+                    </div>
+                    <p>
+                        Wrote an Ansible playbook to set up and update WireGuard and its configs
+                        on a workstation with a single run. Learned WireGuard from scratch alongside
+                        ORTSOC's internal specifications, working asynchronously with other student
+                        analysts and writing comprehensive handoff notes.
+                    </p>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Custom Shell (xv6)</h3>
+                        <span class="entry-date">2025</span>
+                    </div>
+                    <p>
+                        Modified the xv6 teaching operating system to add more modern OS concepts,
+                        implementing network drivers, paging, traps, and syscalls. Adapted a
+                        pre-existing codebase, learned real system architecture, and maintained
+                        clear documentation for future contributors.
+                    </p>
+                </article>
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Custom Shell (xv6)</h3>
+                        <span class="entry-date">2025</span>
+                    </div>
+                    <p>
+                        Modified the xv6 teaching operating system to add more modern OS concepts,
+                        implementing network drivers, paging, traps, and syscalls. Adapted a
+                        pre-existing codebase, learned real system architecture, and maintained
+                        clear documentation for future contributors.
+                    </p>
+                </article>
+                <article class="project-card">
+                    <div class="project-head">
+                        <h3>Custom Shell (xv6)</h3>
+                        <span class="entry-date">2025</span>
+                    </div>
+                    <p>
+                        Modified the xv6 teaching operating system to add more modern OS concepts,
+                        implementing network drivers, paging, traps, and syscalls. Adapted a
+                        pre-existing codebase, learned real system architecture, and maintained
+                        clear documentation for future contributors.
+                    </p>
+                </article>
+            </div>
+
+            <!--
+        <section id="music" class="panel music">
+            <h2>Music</h2>
+            <p class="section-intro">
+                I write and produce music in my spare time &mdash; mostly ambient, cinematic,
+                and jazz-influenced pieces made in Reason Studios.
+            </p>
+
+            <div class="track">
+                <div class="track-head">
+                    <h3>Caves</h3>
+                    <span class="entry-date">original</span>
+                </div>
+                <p>A chill piece that reminds me of water dripping in a cave.</p>
+                <audio controls src="songs/Caves.wav"></audio>
+            </div>
+
+            <div class="track">
+                <div class="track-head">
+                    <h3>Boss mode</h3>
+                    <span class="entry-date">original</span>
+                </div>
+                <p>Something that feels like boss music.</p>
+                <audio controls src="songs/boss mode actual final.wav"></audio>
+            </div>
+
+            <div class="track">
+                <div class="track-head">
+                    <h3>S2 Jazz</h3>
+                    <span class="entry-date">original</span>
+                </div>
+                <p>A jazz piece made while messing around with an arpeggiator.</p>
+                <audio controls src="songs/s2 jazz  song.wav"></audio>
+            </div>
+
+            <div class="track">
+                <div class="track-head">
+                    <h3>Thor I Am</h3>
+                    <span class="entry-date">original</span>
+                </div>
+                <p>Made while first learning Reason Studios.</p>
+                <audio controls src="songs/thor i am2.wav"></audio>
+            </div>
+        </section>
+-->
+
+        <section id="interests" class="panel">
+            <h2>Hobbies</h2>
+            <p class="section-intro">
+                I run a home lab on NixOS, I'm involved with Women in Cybersecurity (WiCyS),
+                and I compete in CTFs for fun. I also like finding vulnerabilities in my old
+                devices &mdash; an iPod Touch, a Kindle, a Wii U, and a Samlightg tablet have all
+                been fair game.
+            </p>
+            <p class="tag-row">
+                <span class="tag">Rock Climbing</span><span class="tag">Running</span>
+                <span class="tag">Soccer</span><span class="tag">Basketball</span>
+                <span class="tag">Jewelry Making</span><span class="tag">Flute</span>
+                <span class="tag">Saxophone</span><span class="tag">Trumpet</span>
+                <span class="tag">Piano</span><span class="tag">Guitar</span>
+                <span class="tag">D&amp;D</span><span class="tag">MTG</span>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Silas Dermer <span class="cursor">&nbsp;</span>
+    </footer>
+</body>
+</html>
