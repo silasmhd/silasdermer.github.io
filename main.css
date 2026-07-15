@@ -47,19 +47,16 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-body);}
+
+main {
   line-height: 1.55;
   margin: 0 auto;
-  padding-top: 50px;
   padding-left: 3%;
   padding-right: 3%;
-  padding-bottom: 25%;
   max-width: 1000px;
   overscroll-behavior: none;
   position: relative;
-}
-
-main {
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -79,7 +76,9 @@ h2 {
 /* about - name, role*/
 
 .about {
-  padding: 48px 0 0;
+  margin: 20px 0 0;
+  padding: 10px 0 0;
+
 }
 
 .about h2 {
@@ -329,8 +328,7 @@ footer {
   color: var(--text-dim);
   text-align: center;
   margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
+  padding-bottom: 25%;
 }
 
 
@@ -399,22 +397,6 @@ a:focus-visible,
 
 
 
-/* Mobile */
-@media (max-width: 655px) {
-  .about {
-  padding: 80px 0 0;
-  }
-}
-
-
-@media (max-width: 476px) {
-  .about {
-  padding: 110px 0 0;
-  }
-}
-
-
-
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -425,4 +407,3 @@ a:focus-visible,
     scroll-behavior: initial;
   }
 }
-
