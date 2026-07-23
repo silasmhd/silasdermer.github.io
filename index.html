@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Silas Dermer — Security Analyst</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
+
     <script>
       (function () {
         var saved = localStorage.getItem("mode");
@@ -19,6 +26,7 @@
         }
       })();
     </script>
+    
     <script src="controls.js" defer></script>
 </head>
 <body>
@@ -29,12 +37,13 @@
                 <h1>Silas Dermer</h1> 
             </a>
             <nav class="local">
-                <a class="nav-link" href="#about">about</a>
-                <a class="nav-link" href="#experience">experience</a>
                 <a class="nav-link" href="#skills">skills</a>
+                <a class="nav-link" href="#about">education</a>
+                <a class="nav-link" href="#experience">experience</a>
                 <a class="nav-link" href="#projects">projects</a>
                 <!-- <a class="nav-link" href="#music">music</a> -->
                 <a class="nav-link" href="#interests">interests</a>
+                <a class="nav-link" href="#contact">contact</a>
             </nav>
             <button id="mode-toggle" class="mode-toggle" aria-label="Switch between dark and light mode" title="Switch mode">
                 <span class="mode-icon mode-icon-dark" aria-hidden="true">&#9789;</span>
@@ -46,12 +55,77 @@
     <main>
         <section id="top" class="about">
             <h2>Security Analyst &bull; Cybersecurity, B.S. &mdash; Oregon State University</h2>
-            <p class="section-intro">
-                I defend networks by day, automate infrastructure by night, and take apart
-                old hardware for fun. Currently protecting schools and municipalities across
-                Oregon and Washington as part of ORTSOC.
+        </section>
+        <section class="panel">
+            <h2>Hi, I'm Silas Dermer.</h2>
+             <p class="intro">
+                I just graduated from Oregon State University’s College of Engineering with a degree in Computer Science. My focus was Cybersecurity, which gave me the incredible opportunity to work at ORTSOC where I gained hands-on experience as a Security Engineer and Network Security Analyst. I also had the opportunity to work in penetration testing and governance, risk, and compliance, gaining experience in security operations, documentation, risk assessment, and compliance.
+            </p>
+            <p class="intro">    
+                As a side project I’ve been building out a personal homelab using NixOS, which has taught me a great deal about system configuration and infrastructure. I’ve also been experimenting with my older devices, trying to recreate exploits or find my own. Some of other my hobbies include sports, music and jewelry making.
+            </p>
+            <p class="intro">
+                My professional experience includes the hospitality industry and the performing arts industry. These roles strengthened my communication and ability to work effectively in fast-paced team environments.
+            </p>
+            <p class="intro">
+                I’m eager to learn more about Cybersecurity and Software Engineering and to work with anyone. I’ve found that you can learn so much and get amazing results just by collaborating with a wide range of people.
+            </p>
+            <p class="intro">
+                Feel free to reach out to me if you want to chat or discuss opportunities. Have a great day!
             </p>
             </div>
+        </section>
+
+        <section class="panel none" id="skills">
+            <h2>Skills</h2>
+
+            <h3 class="subhead">Languages</h3>
+            <p class="tag-row">
+                <span class="tag surface">C</span>
+                <span class="tag surface">C++</span>
+                <span class="tag surface">Python</span>
+                <span class="tag surface">Bash</span>
+                <span class="tag surface">Rust</span>
+                <span class="tag surface">Java</span>
+                <span class="tag surface">SQL</span>
+                <span class="tag surface">JavaScript</span>
+                <span class="tag surface">HTML</span>
+                <span class="tag surface">CSS</span>
+                <span class="tag surface">Assembly</span>
+            </p>
+
+            <h3 class="subhead">Frameworks &amp; Programs</h3>
+            <p class="tag-row">
+                <span class="tag surface">Node.js</span>
+                <span class="tag surface">React</span>
+                <span class="tag surface">Git</span>
+                <span class="tag surface">GitHub</span>
+                <span class="tag surface">VS Code</span>
+                <span class="tag surface">Visual Studio</span>
+                <span class="tag surface">Ghidra</span>
+                <span class="tag surface">GDB</span>
+                <span class="tag surface">Kibana</span>
+            </p>
+
+            <h3 class="subhead">Tools &amp; Concepts</h3>
+            <p class="tag-row">
+                <span class="tag surface">AWS</span>
+                <span class="tag surface">Virtualization</span>
+                <span class="tag surface">Ansible</span>
+                <span class="tag surface">Terraform</span>
+                <span class="tag surface">CIS Controls</span>
+                <span class="tag surface">NIST</span>
+            </p>
+
+            <h3 class="subhead">Operating Systems</h3>
+            <p class="tag-row">
+                <span class="tag surface">Ubuntu</span>
+                <span class="tag surface">AlmaLinux</span>
+                <span class="tag surface">Kali</span>
+                <span class="tag surface">NixOS</span>
+                <span class="tag surface">MacOS</span>
+                <span class="tag surface">Windows</span>
+            </p>
         </section>
 
         <section id="about" class="panel">
@@ -72,14 +146,18 @@
                 <span class="tag">Enterprise Defense</span>
                 <span class="tag">Network Security</span>
                 <span class="tag">Digital Forensics</span>
+                <span class="tag">Machine Learning &amp; Data Mining</span>
                 <span class="tag">Cryptography</span>
                 <span class="tag">Computer Networks</span>
                 <span class="tag">Web Development</span>
                 <span class="tag">Software Development</span>
                 <span class="tag">Operating Systems</span>
                 <span class="tag">Computer Architecture &amp; Assembly</span>
-                <span class="tag">Machine Learning &amp; Data Mining</span>
             </p>
+            <h3 class="subhead">Club Involvement</h3>
+                <span class="tag">CFT League</span>
+                <span class="tag">Security Club</span>
+                <span class="tag">WiCyS</span>
         </section>
 
         <section id="experience" class="panel">
@@ -112,40 +190,11 @@
             </div>
         </section>
 
-        <section id="skills" class="panel">
-            <h2>Skills</h2>
-
-            <h3 class="subhead">Languages</h3>
-            <p class="tag-row">
-                <span class="tag">C</span><span class="tag">C++</span><span class="tag">Java</span>
-                <span class="tag">Python</span><span class="tag">Rust</span><span class="tag">Bash</span>
-                <span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">HTML</span>
-                <span class="tag">CSS</span><span class="tag">Assembly</span>
-            </p>
-
-            <h3 class="subhead">Frameworks &amp; Programs</h3>
-            <p class="tag-row">
-                <span class="tag">Node.js</span><span class="tag">React</span><span class="tag">Git</span>
-                <span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Visual Studio</span>
-                <span class="tag">Ghidra</span><span class="tag">GDB</span><span class="tag">Kibana</span>
-            </p>
-
-            <h3 class="subhead">Infrastructure &amp; Security</h3>
-            <p class="tag-row">
-                <span class="tag">AWS</span><span class="tag">Ansible</span><span class="tag">Terraform</span>
-                <span class="tag">Security Controls</span>
-            </p>
-
-            <h3 class="subhead">Operating Systems</h3>
-            <p class="tag-row">
-                <span class="tag">Ubuntu</span><span class="tag">AlmaLinux</span><span class="tag">Kali</span>
-                <span class="tag">NixOS</span><span class="tag">Windows</span>
-            </p>
-        </section>
+        <section class="panel none" id="projects">
             <h2>Projects</h2>
-            <div id="projects" class="project-grid">
-                <article class="project-card">
-                    <div class="project-head">
+            <div class="grid">
+                <article class="card">
+                    <div class="head">
                         <h3>Honeypot</h3>
                         <span class="entry-date">2026</span>
                     </div>
@@ -158,8 +207,8 @@
                     </p>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-head">
+                <article class="card">
+                    <div class="head">
                         <h3>Automating WireGuard Setup</h3>
                         <span class="entry-date">2026</span>
                     </div>
@@ -171,8 +220,8 @@
                     </p>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-head">
+                <article class="card">
+                    <div class="head">
                         <h3>Custom Shell (xv6)</h3>
                         <span class="entry-date">2025</span>
                     </div>
@@ -184,144 +233,63 @@
                     </p>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Machine Learning</h3>
-                        <span class="entry-date">2026</span>
-                    </div>
-                    <p>
-                        
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Polution Visulization</h3>
-                        <span class="entry-date">2026</span>
-                    </div>
-                    <p>
-                        
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Web Development</h3>
-                        <span class="entry-date">2026</span>
-                    </div>
-                    <p>
-                        
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Databases</h3>
-                        <span class="entry-date">2026</span>
-                    </div>
-                    <p>
-                        
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-head">
+                <article class="card">
+                    <div class="head">
                         <h3>Automation</h3>
                         <span class="entry-date">2026</span>
                     </div>
                     <p>
-                        
+                        Coming soon
                     </p>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-head">
+                <article class="card">
+                    <div class="head">
                         <h3>Dark Arts</h3>
-                        <span class="entry-date">2026</span>
-                    </div>
-                    <p>
-                        
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3> </h3>
-                        <span class="entry-date">2026</span>
-                    </div>
-                    <p>
-                        
-                    </p>
-                </article>
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Honeypot</h3>
-                        <span class="entry-date">2026</span>
-                    </div>
-                    <p>
-                        Built T-Pot honeypots behind ORTSOC's firewall, forwarding alerts into
-                        existing Elastic infrastructure. Configured SSH, Telnet, HTTP, HTTPS, RDP,
-                        FTP, SMB/NetBIOS, MySQL, and other emulated services, and set it up to work
-                        with client sensors so honeypots could be offered to clients. Worked in a
-                        team of three as a special-credit class project.
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Automating WireGuard Setup</h3>
-                        <span class="entry-date">2026</span>
-                    </div>
-                    <p>
-                        Wrote an Ansible playbook to set up and update WireGuard and its configs
-                        on a workstation with a single run. Learned WireGuard from scratch alongside
-                        ORTSOC's internal specifications, working asynchronously with other student
-                        analysts and writing comprehensive handoff notes.
-                    </p>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Custom Shell (xv6)</h3>
                         <span class="entry-date">2025</span>
                     </div>
                     <p>
-                        Modified the xv6 teaching operating system to add more modern OS concepts,
-                        implementing network drivers, paging, traps, and syscalls. Adapted a
-                        pre-existing codebase, learned real system architecture, and maintained
-                        clear documentation for future contributors.
+                        Coming soon
                     </p>
                 </article>
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Custom Shell (xv6)</h3>
+
+                <article class="card">
+                    <div class="head">
+                        <h3>Machine Learning</h3>
                         <span class="entry-date">2025</span>
                     </div>
                     <p>
-                        Modified the xv6 teaching operating system to add more modern OS concepts,
-                        implementing network drivers, paging, traps, and syscalls. Adapted a
-                        pre-existing codebase, learned real system architecture, and maintained
-                        clear documentation for future contributors.
+                        Coming soon
                     </p>
                 </article>
-                <article class="project-card">
-                    <div class="project-head">
-                        <h3>Custom Shell (xv6)</h3>
+
+                <article class="card">
+                    <div class="head">
+                        <h3>Polution Visulization</h3>
                         <span class="entry-date">2025</span>
                     </div>
                     <p>
-                        Modified the xv6 teaching operating system to add more modern OS concepts,
-                        implementing network drivers, paging, traps, and syscalls. Adapted a
-                        pre-existing codebase, learned real system architecture, and maintained
-                        clear documentation for future contributors.
+                        Coming soon
                     </p>
                 </article>
+
+                <article class="card">
+                    <div class="head">
+                        <h3>Databases</h3>
+                        <span class="entry-date">2025</span>
+                    </div>
+                    <p>
+                        Coming soon
+                    </p>
+                </article>
+
             </div>
+        </section> 
 
             <!--
         <section id="music" class="panel music">
             <h2>Music</h2>
-            <p class="section-intro">
+            <p class="intro">
                 I write and produce music in my spare time &mdash; mostly ambient, cinematic,
                 and jazz-influenced pieces made in Reason Studios.
             </p>
@@ -366,7 +334,7 @@
 
         <section id="interests" class="panel">
             <h2>Hobbies</h2>
-            <p class="section-intro">
+            <p class="intro">
                 I run a home lab on NixOS, I'm involved with Women in Cybersecurity (WiCyS),
                 and I compete in CTFs for fun. I also like finding vulnerabilities in my old
                 devices &mdash; an iPod Touch, a Kindle, a Wii U, and a Samsung tablet have all
@@ -380,6 +348,37 @@
                 <span class="tag">Piano</span><span class="tag">Guitar</span>
                 <span class="tag">D&amp;D</span><span class="tag">MTG</span>
             </p>
+        </section>
+        <section id="contact" class="panel">
+            <h2>Contact</h2>
+            <p class="intro">
+                Let me know if you want to schedule a chat!
+            </p>
+            <div class="grid">
+                <article class="card contact">
+                    <div class="head">
+                        <h3>Email</h3>
+                    </div>
+                    <p>
+                       silasdermer@gmail.com
+                    </p>
+                </article>
+                <article class="card contact">
+                    <div class="head">
+                        <h3>GitHub</h3>
+                    </div>
+                    <p>
+                       silasmhd
+                    </p>
+                </article>
+                <article class="card contact">
+                    <div class="head">
+                        <h3>Discord</h3>
+                    </div>
+                    <p>
+                       somethingsburning
+                    </p>
+                </article>
         </section>
     </main>
 
