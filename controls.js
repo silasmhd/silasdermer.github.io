@@ -36,3 +36,26 @@ const toggleButton = document.getElementById("mode-toggle");
         }
     });
 });
+
+
+// Copy to Clipboard
+function copy( copyText ) {
+    navigator.clipboard.writeText(copyText);
+
+    var tooltip = document.getElementById("Tooltip1");
+    tooltip.innerHTML = "Copied";
+    tooltip = document.getElementById("Tooltip2");
+    tooltip.innerHTML = "Copied";
+    tooltip = document.getElementById("Tooltip3");
+    tooltip.innerHTML = "Copied";
+
+}
+
+function resetTool() {
+    var tooltip = document.getElementById("Tooltip1");
+    tooltip.innerHTML = "Copy to clipboard";
+    tooltip = document.getElementById("Tooltip2");
+    tooltip.innerHTML = "Copy to clipboard";
+    tooltip = document.getElementById("Tooltip3");
+    tooltip.innerHTML = "Copy to clipboard";
+}
